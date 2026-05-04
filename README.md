@@ -142,3 +142,32 @@ A typical implementation includes:
 * The algorithm is typically demonstrated on small numbers like 15 or 21.
 
 ---
+
+
+## Limitations
+
+* Current quantum hardware is not capable of factoring large numbers used in real-world encryption.
+* Requires a large number of qubits and error correction for scalability.
+* Probabilistic output means multiple runs are often required.
+
+---
+
+## Applications
+
+* Cryptanalysis (breaking RSA)
+* Number theory research
+* Benchmarking quantum computers
+
+---
+
+## Prerequisites
+
+To understand this project, familiarity with the following is helpful:
+
+* Basic number theory (modular arithmetic, gcd)
+* Linear algebra (vectors, transformations)
+* Quantum computing basics (qubits, gates, superposition)
+* Python and Qiskit (for implementation)
+
+---
+
