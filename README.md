@@ -171,3 +171,8 @@ To understand this project, familiarity with the following is helpful:
 
 ---
 
+## Conclusion
+
+Shor’s Algorithm represents a major breakthrough in computational theory, showing that quantum systems can solve certain problems far more efficiently than classical computers.
+
+While practical large-scale factorization is still out of reach, the algorithm remains one of the strongest motivations for building scalable quantum hardware.
