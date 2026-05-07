@@ -99,3 +99,9 @@ result = simulator.run(compiled_circuit, shots=1024).result()
 
 counts = result.get_counts()
 
+
+print("Measurement Results:")
+print(counts)
+
+plot_histogram(counts)
+plt.show()
