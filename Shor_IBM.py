@@ -99,4 +99,3 @@ result = simulator.run(compiled_circuit, shots=1024).result()
 
 counts = result.get_counts()
 
-
