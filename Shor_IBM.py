@@ -62,7 +62,7 @@ def c_amod15(a, power):
 
     return controlled_U
 
-    
+
 
 n_count = 8
 a = 2
@@ -88,3 +88,15 @@ qc.append(qft_dagger(n_count), range(n_count))
 
 
 qc.measure(range(n_count), range(n_count))
+
+
+
+simulator = AerSimulator()
+
+compiled_circuit = transpile(qc, simulator)
+
+result = simulator.run(compiled_circuit, shots=1024).result()
+
+counts = result.get_counts()
+
+
