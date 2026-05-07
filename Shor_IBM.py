@@ -105,3 +105,13 @@ print(counts)
 
 plot_histogram(counts)
 plt.show()
+
+
+"""
+
+Make sure to install the "pip install qiskit qiskit-aer matplotlib"
+
+& 
+
+Get the hardware resource from IBM
+"""
