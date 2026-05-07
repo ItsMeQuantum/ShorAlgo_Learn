@@ -61,3 +61,30 @@ def c_amod15(a, power):
     controlled_U = U.control()
 
     return controlled_U
+
+    
+
+n_count = 8
+a = 2
+
+qc = QuantumCircuit(n_count + 4, n_count)
+
+
+for q in range(n_count):
+    qc.h(q)
+
+
+qc.x(n_count + 3)
+
+
+for q in range(n_count):
+    qc.append(
+        c_amod15(a, 2 ** q),
+        [q] + [i + n_count for i in range(4)]
+    )
+
+
+qc.append(qft_dagger(n_count), range(n_count))
+
+
+qc.measure(range(n_count), range(n_count))
